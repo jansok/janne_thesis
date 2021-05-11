@@ -1,0 +1,8 @@
+{
+  "baseUrl": "http://dev.genmed.ut.ee:8010",
+  "env": {
+    "genesUrl": "http://dev.genmed.ut.ee:8010",
+    "keycloakLoginUsername": "",
+    "keycloakLoginPassword": ""
+  }
+}

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:id="http://x-road.eu/xsd/identifiers" xmlns:xrd="http://x-road.eu/xsd/xroad.xsd">
+    <SOAP-ENV:Header>
+        <xrd:client id:objectType="SUBSYSTEM">
+            <id:xRoadInstance>EE</id:xRoadInstance>
+            <id:memberClass>COM</id:memberClass>
+            <id:memberCode>CYPRESS</id:memberCode>
+            <id:subsystemCode>LOCAL</id:subsystemCode>
+        </xrd:client>
+        <xrd:service id:objectType="SERVICE">
+            <id:xRoadInstance>EE</id:xRoadInstance>
+            <id:memberClass>GOV</id:memberClass>
+            <id:memberCode>GENES</id:memberCode>
+            <id:subsystemCode>LOCAL</id:subsystemCode>
+            <id:serviceCode>createDeclaration</id:serviceCode>
+            <id:serviceVersion>v1</id:serviceVersion>
+        </xrd:service>
+        <xrd:id>$varGuid</xrd:id>
+        <xrd:protocolVersion>4.0</xrd:protocolVersion>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns5:createDeclaration xmlns:ns5="http://producer.x-road.eu/genmed/2020/declaration">
+            <purpose>Requesting data access for cross-border genetic data retrieval.</purpose>
+            <certificate>-----BEGIN CERTIFICATE-----
+                MIIDijCCAnKgAwIBAgIUFwEzRmIWdRxK4Z51ZW7aSWhqb6swDQYJKoZIhvcNAQEL
+                BQAwTjEjMCEGA1UEAwwaR2VuZXRpYyBDb21wdXRhdGlvbiBTZXJ2ZXIxCzAJBgNV
+                BAYTAkZJMQwwCgYDVQQKDANDU0MxDDAKBgNVBAsMA0RFVjAeFw0yMTAyMjIxMjI1
+                MjlaFw0yNDAyMjIxMjI1MjlaME4xIzAhBgNVBAMMGkdlbmV0aWMgQ29tcHV0YXRp
+                b24gU2VydmVyMQswCQYDVQQGEwJGSTEMMAoGA1UECgwDQ1NDMQwwCgYDVQQLDANE
+                RVYwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQDE7JodyfKkqHFlNMgH
+                Fkicrqq9gUkF/6kFJr8/HOvpKW9ycKKI3FsTbjzMP8baGRfGeMkq7QrRExgWwlzK
+                2ZzdT36lcizB3pwBXcUgcI8pV7hnRplaK6IPk10RsVIiKHtpcKN3n8g8vjrQ0Qqk
+                DoKfccmK8EXj++LEZfBWhDyShz224AZ0ZoMo6f9fstYxMEz1ctJ4YcSH7ucj/3wC
+                CwnAXMPPHkQ3l6+jHaTkbQTPVZ0BqgLnE+Bh5Ei3pFh2yFXjIvoiGq3/qbVrrbrW
+                x8YO+Gj0dIRPnFZBtEwZLwpcJEpNjbCJBlKR7vwQF/QgTdwSImcL8GwotAa5DKdk
+                0KyPAgMBAAGjYDBeMB0GA1UdDgQWBBQhBt+vCWHlr1QsLCwLRNNFNXzeGTAfBgNV
+                HSMEGDAWgBQhBt+vCWHlr1QsLCwLRNNFNXzeGTAOBgNVHQ8BAf8EBAMCBaAwDAYD
+                VR0TAQH/BAIwADANBgkqhkiG9w0BAQsFAAOCAQEAsPCSkinaxhl7WeqRagnlTQ1y
+                ZibtwqRo/hN5cE9dDnA0/F3ltE/62bOq8sc4+4y8PRgi2cyHMKUQyQ8+pOUzlweA
+                vqUxPSe6ntuCPDAtCm/+XD4U4jU9ctH54ZyMMRxRdGIa8W2erlb52DlRlDzgFoxr
+                3EKsFIpoPTW1MwjQkFCOqvE6KaSxf+qlqKu4Bt5GWCJoJNpi7x+jVe/y1oguo588
+                r5XL6D2TVpJEnu2ZDitYl1WwOq93JwouIr70aKTIBVq8hGbNxbaPTAHzy/OYvKrD
+                WVDmOeQPJyejDF2xbxbxByPx1jfii2ajcgqwp8yt3LIveR/3DmYC/yhuZGCZsQ==
+                -----END CERTIFICATE-----</certificate>
+            <dataProcessing refGenomeVer="37" imputed="true" phased="true">
+                TEST
+            </dataProcessing>
+            <optionalSnps>
+            </optionalSnps>
+        </ns5:createDeclaration>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:id="http://x-road.eu/xsd/identifiers" xmlns:xrd="http://x-road.eu/xsd/xroad.xsd">
+    <SOAP-ENV:Header>
+        <xrd:client id:objectType="SUBSYSTEM">
+            <id:xRoadInstance>EE</id:xRoadInstance>
+            <id:memberClass>COM</id:memberClass>
+            <id:memberCode>CYPRESS</id:memberCode>
+            <id:subsystemCode>LOCAL</id:subsystemCode>
+        </xrd:client>
+        <xrd:service id:objectType="SERVICE">
+            <id:xRoadInstance>EE</id:xRoadInstance>
+            <id:memberClass>GOV</id:memberClass>
+            <id:memberCode>GENES</id:memberCode>
+            <id:subsystemCode>LOCAL</id:subsystemCode>
+            <id:serviceCode>createDeclaration</id:serviceCode>
+            <id:serviceVersion>v1</id:serviceVersion>
+        </xrd:service>
+        <xrd:id>$varGuid</xrd:id>
+        <xrd:protocolVersion>4.0</xrd:protocolVersion>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns5:createDeclaration xmlns:ns5="http://producer.x-road.eu/genmed/2020/declaration">
+            <purpose>Requesting data access for cross-border genetic data retrieval.</purpose>
+            <certificate>-----BEGIN CERTIFICATE-----
+                INVALID
+                -----END CERTIFICATE-----</certificate>
+            <dataProcessing refGenomeVer="37" imputed="true" phased="true">
+                TEST
+            </dataProcessing>
+            <optionalSnps>
+                <snp chrpos="10:94761900" id="rs12248560" />
+                <snp chrpos="10:94762706" id="rs28399504" />
+                <snp chrpos="10:94762712" id="rs367543002" />
+                <snp chrpos="10:94762715" id="rs367543003" />
+                <snp chrpos="10:94762760" id="rs17882687" />
+                <snp chrpos="10:94775106" id="rs12769205" />
+                <snp chrpos="10:94775367" id="rs12769205" />
+                <snp chrpos="10:94775416" id="rs41291556" />
+                <snp chrpos="10:94775489" id="rs17884712" />
+                <snp chrpos="10:94775507" id="rs58973490" />
+                <snp chrpos="10:94780574" id="rs140278421" />
+                <snp chrpos="10:94780653" id="rs4986893" />
+                <snp chrpos="10:94781858" id="rs6413438" />
+                <snp chrpos="10:94781859" id="rs4244285" />
+                <snp chrpos="10:94842866" id="rs3758581" />
+                <snp chrpos="10:94842879" id="rs118203757" />
+                <snp chrpos="10:94849995" id="rs17879685" />
+                <snp chrpos="10:94852765" id="rs192154563" />
+            </optionalSnps>
+        </ns5:createDeclaration>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>

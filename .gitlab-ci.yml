@@ -1,0 +1,7 @@
+api_test_dev:
+  stage: deploy
+  tags:
+    - genmed-dev
+  script:
+    - cd cypress-api-test && docker build -t cypress-api-test .
+    - docker run --rm cypress-api-test

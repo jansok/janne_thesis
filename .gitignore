@@ -1,0 +1,6 @@
+.idea
+
+cypress-api-test/cypress/videos
+cypress-api-test/cypress/screenshots
+cypress-api-test/node_modules
+cypress-api-test/package-lock.json

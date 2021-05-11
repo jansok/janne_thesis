@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<SOAP-ENV:Envelope xmlns:SOAP-ENV="http://schemas.xmlsoap.org/soap/envelope/" xmlns:id="http://x-road.eu/xsd/identifiers" xmlns:xrd="http://x-road.eu/xsd/xroad.xsd">
+    <SOAP-ENV:Header>
+        <xrd:client id:objectType="SUBSYSTEM">
+            <id:xRoadInstance>EE</id:xRoadInstance>
+            <id:memberClass>COM</id:memberClass>
+            <id:memberCode>CYPRESS</id:memberCode>
+            <id:subsystemCode>LOCAL</id:subsystemCode>
+        </xrd:client>
+        <xrd:service id:objectType="SERVICE">
+            <id:xRoadInstance>EE</id:xRoadInstance>
+            <id:memberClass>GOV</id:memberClass>
+            <id:memberCode>GENES</id:memberCode>
+            <id:subsystemCode>LOCAL</id:subsystemCode>
+            <id:serviceCode>updateCertificates</id:serviceCode>
+            <id:serviceVersion>v1</id:serviceVersion>
+        </xrd:service>
+        <xrd:protocolVersion>4.0</xrd:protocolVersion>
+    </SOAP-ENV:Header>
+    <SOAP-ENV:Body>
+        <ns5:updateCertificates xmlns:ns5="http://producer.x-road.eu/genmed/2020/genes">
+            <declarationRef>$varDeclarationRef</declarationRef>
+            <certificate>-----BEGIN CERTIFICATE-----
+                MIIDnTCCAoWgAwIBAgIUMyWJRiGaro+TPFfWdvuGgKQFnrEwDQYJKoZIhvcNAQEL
+                BQAwQzEPMA0GA1UEAwwGZ2VubWVkMQswCQYDVQQGEwJFRTERMA8GA1UECAwISGFy
+                anVtYWExEDAOBgNVBAcMB1RhbGxpbm4wHhcNMjEwNDI5MTM1MDU0WhcNMzEwNDI3
+                MTM1MDU0WjBDMQ8wDQYDVQQDDAZnZW5tZWQxCzAJBgNVBAYTAkVFMREwDwYDVQQI
+                DAhIYXJqdW1hYTEQMA4GA1UEBwwHVGFsbGlubjCCASIwDQYJKoZIhvcNAQEBBQAD
+                ggEPADCCAQoCggEBANgzKlwi9QkNGeovotJcvKt0vpGlypsmfqiXpTPIvjfwhe4w
+                D92Z8o28q/rRlmKbKokunfZz38qeZQshfjXmmIdmPfTZh8NX9GiBE6/YyW4xvhwl
+                5cHVRdEjqjqteKGS0Clwo4W0iduDmxMuAFAZUYwOy+MYy844oRJ6kGqT1Mj3dkg3
+                vfOPLzcrF5Za+YAK3KhP+ItGfxu+iuI8i4e+uW8J2H99Nr97ZrF/zfv/EO+jjvwt
+                vuElXODtfnuRhj8zUytDl4PuU9QuBsSmK/rbuaiP5UnJvZgwlW7XH3rSIcKf5tWY
+                TdlCGd0qSlektUNKIYWSXZU450+fDRUxF4mSH9cCAwEAAaOBiDCBhTAdBgNVHQ4E
+                FgQUmQso7YCIswJfFmZiIQu9ctqpFPswHwYDVR0jBBgwFoAUmQso7YCIswJfFmZi
+                IQu9ctqpFPswDgYDVR0PAQH/BAQDAgWgMCAGA1UdJQEB/wQWMBQGCCsGAQUFBwMB
+                BggrBgEFBQcDAjARBgNVHREECjAIggZnZW5tZWQwDQYJKoZIhvcNAQELBQADggEB
+                ADsMgBiJx+8v3d6jJ2f4EOClAeblbCn6Jfnrb3v31W0QiXW58B+AmFfQzV6uWZ6m
+                HZf5N2NXMyouuGUP7EDL/CRGOPQ5QSA+PirFOSN2uGoHv2J8Z4PXFiP5/rtxc3T0
+                tFaeoy/YfPLMKyAOncQVkJdNs1u3tmdO1MCRt1OUO2jwfSffprDF2xQ+RjHNVqk6
+                i0KYSbhDld0bggMtlZE2/KzN6/6F47jSri0YsMVT063jUABW3TyJQGXqgYytXEuH
+                vUDuM+CopS57IOT1EfMP4UrRwAh0y9Bkrc4d59P/wjQg4HymTnqcNKGyRFuRHlFN
+                bj28qEKnSEJe54lfQ6yL0KM=
+                -----END CERTIFICATE-----
+            </certificate>
+        </ns5:updateCertificates>
+    </SOAP-ENV:Body>
+</SOAP-ENV:Envelope>
